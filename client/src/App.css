@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+:root {
+  --primary : #ffeff8;
+  --secondary: #e0f8f5;
+  --links: #E58698;
+  --headers:#444444;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body{
+  background-color: var(--primary) !important;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+header {
+  margin-bottom: 3%;
+  background-color: var(--secondary);
+  
+  box-shadow: 2px 2px 20px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.web-name{
+  font-size: 3rem;
+  margin-left: 2%;
+  padding: 1%;
+}
+.web-name a{
+  text-decoration: none;
+  color: var(--headers);
+ }
+nav ul{
+  display: flex;
+  padding: 1%;
+  margin-right: 2%;
+  
+}
+nav ul li a {
+  color: var(--links) !important;
+  font-size: 1.75rem;
+  margin: 1%;
+  text-decoration: none;
+  color: black;
+
+}
+nav ul li a:hover {
+  font-size: 2rem;
+  transition: all .3s;
+} 
+nav ul li {
+  list-style: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media screen and (max-width: 991px) {
+    header {
+      text-align: center;
+    }
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    nav ul li {
+      
+      margin-top: 3%;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
