@@ -67,6 +67,41 @@ nav ul li {
 .cake-intros div {
   padding: 2%;
 }
+.cake-intros h3 {
+  color: blueviolet;
+}
+footer {
+  background-color: var(--secondary);
+  padding: 2%;
+  box-shadow: 2px 2px 10px;
+}
+footer h2{
+  color: blueviolet;
+}
+footer p {
+  font-size: 1.1rem;
+}
+.flavor-list {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  list-style: none;
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+.cake-comp-img{
+  
+  margin: 3%;
+  width: 40%;
+  border: 1px solid var(--secondary);
+  border-radius: 5%;
+  box-shadow:0 0 15px black;
+  
+}
+.cake-comp-img:hover{
+  transform: scale(1.1);
+  transition: all .4s;
+}
 
 
   @media screen and (max-width: 991px) {
@@ -99,6 +134,10 @@ nav ul li {
       
     }
     .home-h3{
-      font-size: 1.1rem !important;
+      font-size: 1.2rem !important;
+    }
+    .cake-comp-img{
+      width: 75%;
+      margin: 4% auto;
     }
   }
