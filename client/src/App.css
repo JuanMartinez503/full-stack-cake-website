@@ -6,6 +6,7 @@
   --secondary: #e0f8f5;
   --links: #E58698;
   --headers:#444444;
+  --violet: rgb(137, 42, 227)
 }
 
 body{
@@ -43,7 +44,7 @@ nav ul li a {
 .active {
   font-size: 2rem !important;
   transform: translateY(-5px) !important;
-  color: blueviolet !important;
+  color: rgb(137, 42, 227) !important;
 }
 nav ul li a:hover {
   font-size: 2rem !important;
@@ -120,6 +121,17 @@ footer p {
       
     font-size: 1.2rem !important;
     }
+  }
+  .login-a{
+    text-decoration: none;
+    color: white;
+  }
+  .login-btn{
+    background-color: var(--violet) !important;
+    
+  }
+  .logout-btn {
+    
   }
   @media screen and (max-width: 640px) {
     .cake-intros div {

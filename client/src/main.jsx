@@ -10,6 +10,8 @@ import TresLeches from './pages/TresLeches.jsx'
 import CupCake from './pages/CupCake.jsx'
 import Pasteles from './pages/Pasteles.jsx'
 import ChocoFlan from './pages/ChocoFlan.jsx'
+import SignUp from './pages/Signup.jsx'
+import Login from './pages/Login.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path:'/chocoflan/:pageNumber',
         element: <ChocoFlan />
+      },
+      {
+        path:'/login',
+        element: <Login />
+      },
+      {
+        path: '/signup',
+        element: <SignUp />
       }
     ]
   }
