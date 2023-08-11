@@ -13,7 +13,11 @@ module.exports = {
   },
   async createReview(req, res) {
     try {
-      const review = await Review.create(req.body);
+        const newReview = {
+            ...req.body,
+            pageNumber:req.params.pageNumber
+        }
+      const review = await Review.create(newReview);
       const user = await User.findOneAndUpdate(
         { username: req.body.username },
         { $addToSet: { reviews: review._id } },

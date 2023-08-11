@@ -10,12 +10,12 @@ const reviewSchema = new Schema(
       type: Number,
       required: true,
     },
-    username: [
+    username: 
       {
         type: Schema.Types.ObjectId,
         ref: "User",
       },
-    ],
+    
   },
   {
     toJSON: { virtuals: true },

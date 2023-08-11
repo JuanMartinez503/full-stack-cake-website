@@ -1,24 +1,31 @@
-export default function CakeDescription({ description, title, ingredients, flavors, flavorTitle, ingredientsTitle, images }) {
+import CreateReview from "./CreateReview.jsx";
+export default function CakeDescription({ description, title, ingredients, flavors, flavorTitle, images , price}) {
     return (
-      <div className="p-3 my-2">
-        <h2 className="text-center">{title}</h2>
-        <p className="text-center">{description}</p>
-        <h3 className="text-center">{flavorTitle}</h3>
-        <ul >
+      <div className="p-2 my-2">
+        <h2 className="text-center comp-title">{title}</h2>
+        <p className="text-center comp-desc">{description}</p>
+        <h3 className=" my-5 comp-price">Precio: {price}</h3>
+        <ul className="comp-ul">
+        <h3 >{flavorTitle}</h3>
+
           {flavors.map((flavor, i) => (
             <li className="flavor-list"  key={i}> {flavor}</li>
           ))}
         </ul>
-        <h3 className="text-center"> {ingredientsTitle}</h3>
-        <ul>
+        <ul className="comp-ul">
+        <h3 className=" mt-5">Toppings!</h3>
+
           {ingredients.map((ingredient, i) => (
             <li className="flavor-list" key={i}> {ingredient}</li>
           ))}
         </ul>
-            <div className="img-container d-flex flex-wrap justify-content-between">
+            <div className="img-container d-flex flex-wrap justify-content-between my-3">
                 {images.map((img,i)=>(
                     <img className="cake-comp-img" src={img} key={i} />
                 ))}
+            </div>
+            <div>
+                    <CreateReview />
             </div>
       </div>
     );

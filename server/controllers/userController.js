@@ -14,6 +14,10 @@ module.exports = {
     
         res.json(foundUser);
       },
+      async finAll(req, res) {
+        const allUsers =await User.find()
+        res.json(allUsers)
+      },
     async createUser(req,res){
         try {
             const user = await User.create(req.body)

@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import Auth from '../utils/auth'
-import { Button } from "bootstrap";
 export default function NavBar() {
   const currentURL = useLocation().pathname;
 
@@ -60,7 +59,7 @@ export default function NavBar() {
           </li>
         </ul>
       </nav>
-      <div className="d-flex justify-content-end p-2">
+      <div className="d-flex justify-content-end p-1">
             {Auth.loggedIn() ? (
                 <div>
                     <button className="btn logout-btn">Logout</button>

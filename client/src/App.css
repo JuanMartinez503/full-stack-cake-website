@@ -1,5 +1,5 @@
 * {
-  text-shadow: .5 .5 1px;
+  text-shadow: .5 .5 2px;
 }
 :root {
   --primary : #ffeff8;
@@ -14,14 +14,16 @@ body{
 }
 header {
   margin-bottom: 1%;
-  background-color: var(--secondary);
+  background-image: linear-gradient(135deg, #e0f8f5, #ffeaea) !important;
+
   
   box-shadow: 2px 2px 20px;
 }
 .web-name{
-  font-size: 3rem;
+  font-size: 2rem !important;
   margin-left: 2%;
   padding: 1%;
+  
 }
 .web-name a{
   text-decoration: none;
@@ -35,19 +37,19 @@ nav ul{
 }
 nav ul li a {
   color: var(--links) !important;
-  font-size: 1.75rem !important;
-  margin: 1%;
+  font-size: 1.25rem !important;
+  margin-right: 1%;
   text-decoration: none;
   color: black;
 
 }
 .active {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   transform: translateY(-5px) !important;
   color: rgb(137, 42, 227) !important;
 }
 nav ul li a:hover {
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   transition: all .3s;
 } 
 nav ul li {
@@ -82,12 +84,27 @@ footer h2{
 footer p {
   font-size: 1.1rem;
 }
-.flavor-list {
-  width: 100%;
-  align-self: center;
+.comp-ul {
+  width: 200px;
+  margin: 0 auto;
+}
+.comp-title{
+  color: var(--violet);
+  font-size: 2.5rem;
+}
+.comp-price {
+  color: var(--violet);
+  width: 350px;
+  margin: 0 auto;
   text-align: center;
-  list-style: none;
+  font-size: 2rem;
+}
+.comp-desc{
+  font-size: 1.2rem;
+}
+.flavor-list {
   color: blueviolet;
+  list-style: circle;
   font-size: 1.2rem;
 }
 .cake-comp-img{
@@ -131,7 +148,7 @@ footer p {
     
   }
   .logout-btn {
-    
+
   }
   @media screen and (max-width: 640px) {
     .cake-intros div {
