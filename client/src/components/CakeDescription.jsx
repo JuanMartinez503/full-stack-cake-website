@@ -1,5 +1,5 @@
 import CreateReview from "./CreateReview.jsx";
-export default function CakeDescription({ description, title, ingredients, flavors, flavorTitle, images , price}) {
+export default function CakeDescription({ description, title, ingredients, flavors, flavorTitle, images , price ,pageNumber}) {
     return (
       <div className="p-2 my-2">
         <h2 className="text-center comp-title">{title}</h2>
@@ -25,7 +25,7 @@ export default function CakeDescription({ description, title, ingredients, flavo
                 ))}
             </div>
             <div>
-                    <CreateReview />
+                    <CreateReview pageNumber={pageNumber}/>
             </div>
       </div>
     );

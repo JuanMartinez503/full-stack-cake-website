@@ -4,11 +4,22 @@ const reviewSchema = new Schema(
   {
     pageNumber: {
       type: Number,
-      
+      required : true
     },
     rating: {
       type: Number,
       required: true,
+    },
+    review:{
+      type:String,
+      required:true
+    },
+    createdAt:{
+      type: Date,
+      default: Date.now(),
+      get: function (value) {
+        return new Date(value).toISOString()
+      }
     },
     username: 
       {

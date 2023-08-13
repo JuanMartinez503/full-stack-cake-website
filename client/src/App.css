@@ -120,6 +120,28 @@ footer p {
   transform: scale(1.1);
   transition: all .4s;
 }
+.login-a{
+  text-decoration: none;
+  color: white;
+}
+.login-btn{
+  background-color: var(--violet) !important;
+  
+  
+}
+.logout-btn {
+  margin-right: 1%;
+}
+.greeting-message{
+margin-left: 2%;
+font-size: 1.5rem;
+align-content: center;
+}
+.greeting-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 
   @media screen and (max-width: 991px) {
@@ -139,17 +161,7 @@ footer p {
     font-size: 1.2rem !important;
     }
   }
-  .login-a{
-    text-decoration: none;
-    color: white;
-  }
-  .login-btn{
-    background-color: var(--violet) !important;
-    
-  }
-  .logout-btn {
 
-  }
   @media screen and (max-width: 640px) {
     .cake-intros div {
       padding: 0;

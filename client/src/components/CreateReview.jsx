@@ -1,10 +1,11 @@
 import  { useState } from 'react';
-
-function CreateReview() {
+import Auth from '../utils/auth'
+import {createReview} from '../utils/API'
+function CreateReview({pageNumber}) {
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(0);
 
-  const handleReviewChange = (event) => {
+  const handleReviewChange  = (event) => {
     setReview(event.target.value);
   };
 
@@ -12,20 +13,40 @@ function CreateReview() {
     setRating(parseInt(event.target.value, 10));
   };
 
-  const handleSubmit = (event) => {
+  const handleReviewSubmit = async (event) => {
     event.preventDefault();
     // You can handle the submission logic here, such as sending the review and rating to a server.
     console.log('Review:', review);
     console.log('Rating:', rating);
+    const newReview = {
+        review,
+        rating,
+        // username: Auth.getProfile().data.username
+    }
+    const token = Auth.loggedIn() ? Auth.getToken() : null;
+    console.log(token);
+    try {
+    const response = await createReview(newReview, token,pageNumber)
+        if(response.ok){
+            console.log('Review was made');
+            setReview('');
+            setRating(0);
+            
+        } else {
+            console.log('there was an error with the message');
+        }
+        
+    } catch (err) {
+        console.log(err.message);
+    }
     // Reset the form fields
-    setReview('');
-    setRating(0);
+
   };
 
   return (
     <div className="container">
       <h2 className='text-center'>Deja tu opinión</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleReviewSubmit}>
         <div className="mb-3">
           <label htmlFor="review" className="form-label">Descripción de la opinión</label>
           <textarea

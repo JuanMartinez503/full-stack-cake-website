@@ -2,6 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 import Auth from '../utils/auth'
 export default function NavBar() {
   const currentURL = useLocation().pathname;
+  const handleLogout = ()=>{
+    Auth.logout()
+  }
 
   return (
     <header>
@@ -59,13 +62,15 @@ export default function NavBar() {
           </li>
         </ul>
       </nav>
-      <div className="d-flex justify-content-end p-1">
+      <div className=" p-1">
             {Auth.loggedIn() ? (
-                <div>
-                    <button className="btn logout-btn">Logout</button>
+                <div className=" greeting-cont">
+                    <h2 className="greeting-message">Hola, {Auth.getProfile().data.username}!</h2>
+                    <button className=" btn btn-danger logout-btn" onClick={handleLogout}>Logout!</button>
+                
                 </div>
             ):(
-                <div>
+                <div className="text-center">
                     <button className="btn login-btn"><Link className="login-a" to='/login'>Login</Link></button>
                 </div>
             )}

@@ -18,9 +18,11 @@ export default function TresLeches() {
     "Cualquier cosa que desees",
   ];
   const images = [tres1, tres2, tres3, tres4];
+  const pageNumber = 1
   return (
     <div>
       <CakeDescription
+        pageNumber={pageNumber}
         price={price}
         description={description}
         title={title}

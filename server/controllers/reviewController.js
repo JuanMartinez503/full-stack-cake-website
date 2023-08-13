@@ -10,32 +10,36 @@ module.exports = {
         .status(500)
         .json({ message: "There was an error populating the reviews" });
     }
-  },
-  async createReview(req, res) {
+  },async createReview(req, res) {
     try {
-        const newReview = {
-            ...req.body,
-            pageNumber:req.params.pageNumber
-        }
+      const newReview = {
+        ...req.body,
+        pageNumber: req.params.pageNumber,
+      };
+  
       const review = await Review.create(newReview);
-      const user = await User.findOneAndUpdate(
-        { username: req.body.username },
+  
+      // Assuming the user's ID is available in req.user.id
+      const user = await User.findByIdAndUpdate(
+        req.user._id,
         { $addToSet: { reviews: review._id } },
         { new: true, runValidators: true }
       );
+  
       if (!user) {
-        res
+        return res
           .status(404)
-          .json({ message: "Review created but the user Id was not found" });
-      } else {
-        res.json({ message: "Review was created successfully!" });
+          .json({ message: "Review created but the user ID was not found" });
       }
+  
+      return res.json({ message: "Review was created successfully!" });
     } catch (err) {
-      res
+      return res
         .status(500)
-        .json({ message: "there was an error creating the comment" });
+        .json(err.message);
     }
   },
+  
   async deleteReview(req, res) {
     try {
       const reviewId = req.params.reviewId;
