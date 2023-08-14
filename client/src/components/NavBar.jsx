@@ -76,7 +76,7 @@ export default function NavBar() {
           {Auth.loggedIn() ? (
             <div className=" greeting-cont">
               <h2 className="greeting-message">
-          {state.language?( <div>Hola, {Auth.getProfile().data.username}</div>):( <div>Welcome, {Auth.getProfile().data.username}</div>)}
+          {state.language?( <div>Hola, {Auth.getProfile().data.username}!</div>):( <div>Welcome, {Auth.getProfile().data.username}!</div>)}
 
             
               </h2>

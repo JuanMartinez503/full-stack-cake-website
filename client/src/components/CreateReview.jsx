@@ -2,7 +2,7 @@ import  { useState } from 'react';
 import Auth from '../utils/auth'
 import {createReview} from '../utils/API'
 import ReviewsByPage from './ReviewsByPage';
-function CreateReview({pageNumber}) {
+function CreateReview({pageNumber, reviewName, reviewDescription, reviewRating, createBtn, eraseBtn, ratingScore, ratingAvg,createDate}) {
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(0);
 
@@ -46,11 +46,11 @@ function CreateReview({pageNumber}) {
 
   return (
     <div className="container">
-        < ReviewsByPage pageNumber={pageNumber}/>
-      <h2 className='text-center'>Deja tu opinión</h2>
+        < ReviewsByPage pageNumber={pageNumber} eraseBtn={eraseBtn} ratingAvg={ratingAvg} ratingScore={ratingScore} createdDate={createDate}/>
+      <h2 className='text-center'>{reviewName}</h2>
       <form onSubmit={handleReviewSubmit}>
         <div className="mb-3">
-          <label htmlFor="review" className="form-label">Descripción de la opinión</label>
+          <label htmlFor="review" className="form-label">{reviewDescription}</label>
           <textarea
             className="form-control"
             id="review"
@@ -60,7 +60,7 @@ function CreateReview({pageNumber}) {
           />
         </div>
         <div className="mb-3">
-          <label className="form-label">Calificación (1-5) 5 es el Mejor!😃</label>
+          <label className="form-label">{reviewRating}</label>
           <div className="rating-wheel">
             {[1, 2, 3, 4, 5].map((value) => (
               <label key={value} className={`rating-option mx-2 ${rating === value ? 'selected' : ''}`}>
@@ -76,7 +76,7 @@ function CreateReview({pageNumber}) {
             ))}
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">Enviar Opinión</button>
+        <button type="submit" className="btn login-btn btn-primary">{createBtn}</button>
       </form>
     </div>
   );
