@@ -16,10 +16,11 @@ export default function CupCake() {
     'Fresas','Durasnos','Oreos','Etc...'
   ];
   const images = [cupcake1, cupcake2, cupcake3, cupcake4];
-
+  const pageNumber =3
   return (
     <div>
       <CakeDescription
+      pageNumber={pageNumber}
         price={price}
         description={description}
         title={title}

@@ -13,10 +13,11 @@ export default function Chocoflan() {
   const ingredientes = ['Fresas','Durasnos','Uvas','Cocó','Oreos','Etc...'];
   const images = [chocoflan1, chocoflan2, chocoflan3];
   const price = ' $35'
-
+    const pageNumber = 2
   return (
     <div>
       <CakeDescription
+      pageNumber={pageNumber}
       price={price}
         description={description}
         title={title}

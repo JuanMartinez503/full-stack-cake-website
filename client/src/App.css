@@ -141,7 +141,18 @@ align-content: center;
   display: flex;
   justify-content: space-between;
 }
-
+.rating-avg {
+  color: var(--violet) !important;
+  font-size: 2rem;
+}
+.review-date{
+  text-align: right;
+  font-size: .7rem;
+}
+.signup-form{
+  background-color: rgba(255, 255, 255, .6) !important;
+  box-shadow: 0 0 10px !important;
+}
 
 
   @media screen and (max-width: 991px) {

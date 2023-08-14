@@ -3,7 +3,7 @@ const { User, Review } = require("../models");
 module.exports = {
   async populatePages(req, res) {
     try {
-      const reviews = await Review.find({ pageNumber: req.params.pageNumber });
+      const reviews = await Review.find({ pageNumber: req.params.pageNumber }).populate('username','username');
       res.json(reviews);
     } catch (err) {
       res

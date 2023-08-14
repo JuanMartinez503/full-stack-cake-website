@@ -27,6 +27,15 @@ export const createUser = (user) => {
       body: JSON.stringify(newReview),
     });
   };
+  export const populatePages = ( pageNumber) => {
+    
+    return fetch(`/api/reviews/${pageNumber}/public`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  };
   export const deleteReview = (reviewId, token) => {
     return fetch(`/api/reviews/${reviewId}`, {
       method: 'DELETE',

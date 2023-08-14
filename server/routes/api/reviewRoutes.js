@@ -5,6 +5,7 @@ const {
 } = require("../../controllers/reviewController");
 const router = require("express").Router();
 const { authMiddleware } = require("../../utils/auth");
-router.route("/:pageNumber").get(populatePages).post(authMiddleware, createReview);;
+router.route("/:pageNumber/public").get(populatePages)
+router.route("/:pageNumber").post(authMiddleware, createReview);;
 router.route("/:reviewId").delete(authMiddleware, deleteReview);
 module.exports = router;

@@ -31,7 +31,7 @@ export default function Login() {
       <div className="container mb-5">
         <div className="row justify-content-center mt-5">
           <div className="col-md-6">
-            <div className="card">
+            <div className="card signup-form">
               <div className="card-header">Iniciar Sesión</div>
               <div className="card-body">
                 <form onSubmit={handleLogin}>
@@ -61,7 +61,7 @@ export default function Login() {
                       placeholder="Ingrese su contraseña"
                     />
                   </div>
-                  <button type="submit" className="btn btn-primary">
+                  <button type="submit" className="btn btn-primary login-btn">
                     Iniciar Sesión
                   </button>
                 </form>

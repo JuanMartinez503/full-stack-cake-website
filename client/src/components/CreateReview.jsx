@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import Auth from '../utils/auth'
 import {createReview} from '../utils/API'
+import ReviewsByPage from './ReviewsByPage';
 function CreateReview({pageNumber}) {
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(0);
@@ -21,7 +22,7 @@ function CreateReview({pageNumber}) {
     const newReview = {
         review,
         rating,
-        // username: Auth.getProfile().data.username
+        username: Auth.getProfile().data.username
     }
     const token = Auth.loggedIn() ? Auth.getToken() : null;
     console.log(token);
@@ -31,7 +32,7 @@ function CreateReview({pageNumber}) {
             console.log('Review was made');
             setReview('');
             setRating(0);
-            
+            console.log(response);
         } else {
             console.log('there was an error with the message');
         }
@@ -45,6 +46,7 @@ function CreateReview({pageNumber}) {
 
   return (
     <div className="container">
+        < ReviewsByPage pageNumber={pageNumber}/>
       <h2 className='text-center'>Deja tu opinión</h2>
       <form onSubmit={handleReviewSubmit}>
         <div className="mb-3">

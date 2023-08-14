@@ -28,10 +28,12 @@ export default function Pasteles() {
     pastel7,
     pastel8,
   ];
+  const pageNumber = 4
 
   return (
     <div>
       <CakeDescription
+      pageNumber={pageNumber}
         price={price}
         description={description}
         title={title}

@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { createUser } from '../utils/API';
+import {Link} from 'react-router-dom'
 import Auth from '../utils/auth';
 
 export default function SignUp() {
@@ -37,14 +38,14 @@ export default function SignUp() {
 
 
   return (
-    <div>
-      <div className="container mb-5">
+    <div >
+      <div className="container mb-5 ">
         <div className="row justify-content-center mt-5">
           <div className="col-md-6">
-            <div className="card">
+            <div className="card signup-form">
               <div className="card-header">Registrarse</div>
               <div className="card-body">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} >
                   <div className="mb-3">
                     <label htmlFor="username" className="form-label">
                       Nombre de usuario
@@ -88,6 +89,10 @@ export default function SignUp() {
                     Registrarse
                   </button>
                 </form>
+                <p className="mt-3">
+                  ¿Ya tienes cuenta?{" "}
+                  <Link to="/login">Inicia aqui</Link>
+                  </p>
               </div>
             </div>
           </div>

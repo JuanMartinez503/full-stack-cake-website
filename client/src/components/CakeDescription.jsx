@@ -1,5 +1,10 @@
 import CreateReview from "./CreateReview.jsx";
+import Aos from "aos";
+import {useEffect} from 'react'
 export default function CakeDescription({ description, title, ingredients, flavors, flavorTitle, images , price ,pageNumber}) {
+    useEffect(()=>{
+        Aos.init({delay:1000})
+    },[])
     return (
       <div className="p-2 my-2">
         <h2 className="text-center comp-title">{title}</h2>
@@ -21,7 +26,7 @@ export default function CakeDescription({ description, title, ingredients, flavo
         </ul>
             <div className="img-container d-flex flex-wrap justify-content-between my-3">
                 {images.map((img,i)=>(
-                    <img className="cake-comp-img" src={img} key={i} />
+                    <img className="cake-comp-img" data-aos="zoom-in" src={img} key={i} />
                 ))}
             </div>
             <div>
