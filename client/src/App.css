@@ -84,10 +84,7 @@ footer h2{
 footer p {
   font-size: 1.1rem;
 }
-.comp-ul {
-  width: 200px;
-  margin: 0 auto;
-}
+
 .comp-title{
   color: var(--violet);
   font-size: 2.5rem;
@@ -104,7 +101,7 @@ footer p {
 }
 .flavor-list {
   color: blueviolet;
-  list-style: circle;
+  list-style: none;
   font-size: 1.2rem;
 }
 .cake-comp-img{
@@ -114,6 +111,7 @@ footer p {
   border: 1px solid var(--secondary);
   border-radius: 5%;
   box-shadow:0 0 15px black;
+  outline-style: groove;
   
 }
 .cake-comp-img:hover{
@@ -126,6 +124,7 @@ footer p {
 }
 .login-btn{
   background-color: var(--violet) !important;
+  color: white !important;
   
   
 }
@@ -153,7 +152,16 @@ align-content: center;
   background-color: rgba(255, 255, 255, .6) !important;
   box-shadow: 0 0 10px !important;
 }
-
+.display-list {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+.rating-username{
+  color: var(--violet);
+}
 
   @media screen and (max-width: 991px) {
     header {
@@ -174,6 +182,10 @@ align-content: center;
   }
 
   @media screen and (max-width: 640px) {
+    .display-list{
+      display: flex;
+      flex-direction: column;
+    }
     .cake-intros div {
       padding: 0;
       

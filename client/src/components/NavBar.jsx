@@ -99,12 +99,12 @@ export default function NavBar() {
         </div>
       </header>
       <div>
-        <button className="btn-warning btn mx-2"
+        <button className="btn-warning btn mx-2 my-2"
           onClick={() =>
             dispatch({ type: TOGGLE_LANGUAGE, payload: state.language })
           }
         >
-          {state.language?'English':'Spanish'}
+          {state.language?'English':'Espańol'}
         </button>
       </div>
     </div>

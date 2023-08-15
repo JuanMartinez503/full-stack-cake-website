@@ -66,7 +66,7 @@ function ReviewsByPage({ pageNumber, ratingAvg, ratingScore, createdDate, eraseB
             {reviews.map((review) => (
               <li key={review._id} className="my-2 list-group-item" data-aos="zoom-out">
                 <p className="mb-1 text-center">{ratingScore}: {review.rating}</p>
-                <p className="mb-1 my-1"> {review.username} : {review.review}</p>
+                <p className="mb-1 my-1 rating-username"> {review.username} : {review.review}</p>
                 <p className="mb-1 review-date">{createdDate}: {formatDate(review.createdAt)}</p> 
                 {loggedInUsername === review.username && (
                     <div className='text-center'>
