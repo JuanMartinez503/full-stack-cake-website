@@ -19,7 +19,7 @@ export default function NavBar() {
               className={currentURL === "/" ? "nav-link active" : "nav-link"}
               to="/"
             >
-              Martinez Cakes
+              <img src="/martinezcakeslogo.png" id='logo' alt="logo for martinez cakes" />
             </Link>
           </div>
           <ul className="ms-auto">
@@ -55,7 +55,7 @@ export default function NavBar() {
                 }
                 to="/cupcakes/3"
               >
-                Cup Cakes
+                Cupcakes
               </Link>
             </li>
             <li>

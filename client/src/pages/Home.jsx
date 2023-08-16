@@ -1,5 +1,5 @@
 import tresLeches from '../images/tresleches.png'
-import pasteles from '../images/pastel.png'
+import pasteles from '../images/pastel.jpg'
 import { useLanguage } from '../utils/LanguageContext'
 import cupcakes from '../images/cupcake2.jpg'
 import chocoFlan from '../images/chocoflan.png'

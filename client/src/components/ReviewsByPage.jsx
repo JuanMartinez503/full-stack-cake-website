@@ -61,10 +61,12 @@ function ReviewsByPage({ pageNumber, ratingAvg, ratingScore, createdDate, eraseB
 
         <div className="container mt-4">
           <h2 className="mb-4 text-center">Reviews </h2>
+      
           <p className="mb-4 text-center">{ratingAvg} <br /> <span className='rating-avg'>{averageRating}</span></p>
+     
           <ul className="list-group m">
             {reviews.map((review) => (
-              <li key={review._id} className="my-2 list-group-item" data-aos="zoom-out">
+              <li key={review._id} className="my-3 p-3 list-group-item" data-aos="zoom-out">
                 <p className="mb-1 text-center">{ratingScore}: {review.rating}</p>
                 <p className="mb-1 my-1 rating-username"> {review.username} : {review.review}</p>
                 <p className="mb-1 review-date">{createdDate}: {formatDate(review.createdAt)}</p> 

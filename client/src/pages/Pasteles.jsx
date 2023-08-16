@@ -5,8 +5,6 @@ import pastel3 from "../images/pasteles/pastel3.jpg";
 import pastel4 from "../images/pasteles/pastel4.jpg";
 import pastel5 from "../images/pasteles/pastel5.jpg";
 import pastel6 from "../images/pasteles/pastel6.jpg";
-import pastel7 from "../images/pasteles/pastel7.jpg";
-import pastel8 from "../images/pasteles/pastel8.jpg";
 import { useLanguage } from "../utils/LanguageContext.jsx";
 export default function Pasteles() {
     const [state, dispatch] = useLanguage()
@@ -27,8 +25,7 @@ export default function Pasteles() {
     pastel4,
     pastel5,
     pastel6,
-    pastel7,
-    pastel8,
+    
   ];
   const pageNumber = 4
   const reviewEs= 'Deja tu opinion!' 

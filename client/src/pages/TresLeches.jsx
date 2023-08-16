@@ -9,7 +9,7 @@ export default function TresLeches() {
   const descriptionEs =
     "¡Descubre la magia del Pastel Tres Leches! Nuestra creación sublime combina un tierno bizcocho con una mezcla de tres leches y una capa de crema fresca. Cada bocado es una explosión de sabor y textura que te transportará a un paraíso dulce. Ideal para cualquier ocasión especial. ¡Sumérgete en la experiencia del Pastel Tres Leches hoy mismo!";
   const title = "Tres Leches";
-  const flavorTituloEs = "Sabores!";
+  const flavorTituloEs = "Sabores";
   const priceEs = 'Precio: $12-40, y mas!'
   const saboresEs = ["Chocolate", "Vainilla"];
   const ingredientes = [
@@ -31,7 +31,7 @@ export default function TresLeches() {
   //english
   const description =
   "Discover the magic of Tres Leches Cake! Our sublime creation combines a tender sponge cake with a blend of three milks and a layer of fresh cream. Every bite is an explosion of flavor and texture that will transport you to a sweet paradise. Perfect for any special occasion. Immerse yourself in the Tres Leches Cake experience today!";
-const flavorTitle = "Flavors!";
+const flavorTitle = "Flavors";
 const price = 'Price: $12-40, and more!';
 const flavors = ["Chocolate", "Vanilla"];
 const ingredients = [

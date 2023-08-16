@@ -40,7 +40,7 @@ export default function CakeDescription({
       ))}
     </ul>
     <ul className="p-1">
-      <h3 className=" ">Toppings!</h3>
+      <h3 className=" ">Toppings</h3>
 
       {ingredients.map((ingredient, i) => (
         <li className="flavor-list" key={i}>
