@@ -16,7 +16,7 @@ export default function NavBar() {
         <nav className="d-flex">
           <div className="web-name">
             <Link
-              className={currentURL === "/" ? "nav-link active" : "nav-link"}
+              className={currentURL === "/" ? "nav-link" : "nav-link"}
               to="/"
             >
               <img src="/martinezcakeslogo.png" id='logo' alt="logo for martinez cakes" />

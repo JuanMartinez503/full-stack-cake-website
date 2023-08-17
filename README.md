@@ -1,6 +1,6 @@
 # Martinez Cakes: Crafting Delightful Moments with Technology and Taste
 
-## Overview
+## Description
 Martinez Cakes is a meticulously crafted full-stack application, thoughtfully developed from the ground up to complement and elevate my sister's cake business. This digital masterpiece harmoniously blends the artistry of React.js and the robustness of MongoDB to create a seamless and captivating user experience. The frontend showcases an impeccable fusion of JSX, Bootstrap, and bespoke CSS, while the backend is fortified with the dynamic prowess of Node.js, Express.js, and JavaScript.
 
 ## Features That Take the Cake
