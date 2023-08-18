@@ -94,7 +94,7 @@ export default function SignUp() {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
-                  <button type="submit" className="btn login-btn btn-primary">
+                  <button type="submit" className="btn login-btn ">
                     Registrarse
                   </button>
                 </form>
@@ -160,7 +160,7 @@ export default function SignUp() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button type="submit" className="btn login-btn btn-primary">
+            <button type="submit" className="btn login-btn ">
               Sign Up
             </button>
           </form>

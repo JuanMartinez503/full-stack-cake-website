@@ -75,7 +75,7 @@ export default function Login() {
                       placeholder="Ingrese su contraseña"
                     />
                   </div>
-                  <button type="submit" className="btn btn-primary login-btn">
+                  <button type="submit" className="btn  login-btn">
                     Iniciar Sesión
                   </button>
                 </form>
@@ -128,7 +128,7 @@ export default function Login() {
                 placeholder="Enter your password"
               />
             </div>
-            <button type="submit" className="btn btn-primary login-btn">
+            <button type="submit" className="btn login-btn">
               Log In
             </button>
           </form>
