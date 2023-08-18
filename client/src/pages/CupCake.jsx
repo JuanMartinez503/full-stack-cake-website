@@ -12,7 +12,7 @@ export default function CupCake() {
   const title = "Cupcakes";
   const flavorTituloEs = "Sabores";
   const priceEs = "Precio: $15 por la docena!";
-  const saboresEs = ["Vainilla", "Chocolate", "Fresa", "Zanahoria"];
+  const saboresEs = ["Vainilla", "Chocolate", "Fresa", "Mocha", "Cafe"];
   const ingredientes = [
     'Fresas','Durasnos','Oreos','Etc...'
   ];
@@ -32,7 +32,7 @@ export default function CupCake() {
   "Discover the magic of Cupcakes! Our sublime creation combines delicious flavors in a small and charming treat. Every bite is a sweet and unique experience that will make you smile. Perfect for gifting or enjoying by yourself. Immerse yourself in the Cupcake experience today!";
 const flavorTitle = "Flavors";
 const price = "Price: $15 per dozen!";
-const flavors = ["Vanilla", "Chocolate", "Strawberry", "Carrot"];
+const flavors = ["Vanilla", "Chocolate", "Strawberry", "Mocha", "Coffee"];
 const ingredients = ['Strawberries', 'Peaches', 'Oreos', 'Etc...'];
 const review = 'Leave your review!';
 const reviewDescription = 'Review Description';

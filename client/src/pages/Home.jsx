@@ -50,7 +50,7 @@ export default function Home() {
        <p data-aos="fade-right">
         
        {" "}
-          Y no podemos olvidarnos del irresistible Chocoflan: el maridaje
+          Y no podemos olvidarnos del irresistible Chocoflan: la combinacion
           perfecto entre el chocolate y el flan, una maravilla que te hará
           cerrar los ojos con cada cucharada.
        </p>
