@@ -76,7 +76,7 @@ function CreateReview({pageNumber, reviewName, reviewDescription, reviewRating, 
             ))}
           </div>
         </div>
-        <button type="submit" className="btn login-btn btn-primary">{createBtn}</button>
+        <button type="submit" className="btn login-btn ">{createBtn}</button>
       </form>
     </div>
   );
