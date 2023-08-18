@@ -9,7 +9,7 @@ export default function CupCake() {
 
   const description =
     "¡Descubre la magia de los Cupcakes! Nuestra creación sublime combina sabores deliciosos en un pequeño y encantador pastelito. Cada bocado es una experiencia dulce y única que te hará sonreír. Ideal para regalar o disfrutar por ti mismo. ¡Sumérgete en la experiencia de los Cupcakes hoy mismo!";
-  const title = "Cup cakes";
+  const title = "Cupcakes";
   const flavorTituloEs = "Sabores";
   const priceEs = "Precio: $15 por la docena!";
   const saboresEs = ["Vainilla", "Chocolate", "Fresa", "Zanahoria"];
