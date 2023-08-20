@@ -9,12 +9,13 @@ Martinez Cakes is a meticulously crafted full-stack application, thoughtfully de
 - **Cookies and Tokens:** Delight your users with seamless interactions and enhanced personalization, thanks to the utilization of cookies and tokens.
 
 ## Visual Delights
+![Screenshot 2023-08-20 at 3 32 33 PM](https://github.com/JuanMartinez503/full-stack-cake-website/assets/116415860/3f0c03e0-8377-40c8-9125-3826b691663e)
 
 
 ## Taste the Innovation
 This application is a testament to the synergy between culinary artistry and cutting-edge technology. Martinez Cakes infuses creativity into every byte, ensuring my sister's cake business is presented in a digital realm that's as delicious as the confections it represents.
 
 ## Deployed Confections
-[Martinez Cakes]()
+[Martinez Cakes](http://martinezcakes.com/)
 
 Unleash the sweet potential of Martinez Cakes and treat your users to a delightful online experience that's as unforgettable as the taste of my sister's cakes.
