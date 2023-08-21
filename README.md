@@ -16,6 +16,6 @@ Martinez Cakes is a meticulously crafted full-stack application, thoughtfully de
 This application is a testament to the synergy between culinary artistry and cutting-edge technology. Martinez Cakes infuses creativity into every byte, ensuring my sister's cake business is presented in a digital realm that's as delicious as the confections it represents.
 
 ## Deployed Confections
-[Martinez Cakes](http://martinezcakes.com/)
+[Martinez Cakes](https://martinezcakes.com/)
 
 Unleash the sweet potential of Martinez Cakes and treat your users to a delightful online experience that's as unforgettable as the taste of my sister's cakes.
