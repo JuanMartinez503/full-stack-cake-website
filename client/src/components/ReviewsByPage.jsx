@@ -7,7 +7,7 @@ function ReviewsByPage({ pageNumber, ratingAvg, ratingScore, createdDate, eraseB
   const [reviews, setReviews] = useState([]);
   const loggedInUsername = Auth.getProfile()?.data?.username; // Check if the user is logged in
   useEffect(()=>{
-    Aos.init({duration:500})
+    Aos.init({duration:300})
 },[])
 
   useEffect(() => {
