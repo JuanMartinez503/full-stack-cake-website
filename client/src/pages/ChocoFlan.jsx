@@ -14,7 +14,7 @@ export default function Chocoflan() {
   const sabores = ['Chocolate', 'Caramelo','Cafe','Mocha','Fresa'];
   const ingredientesEs = ['Fresas','Durasnos','Uvas','Cocó','Oreos','Etc...'];
   const images = [chocoflan1, chocoflan2, chocoflan3];
-  const priceEs = ' Precio: $35'
+  const priceEs = ' Precio: $40'
     const pageNumber = 2
     const reviewEs= 'Deja tu opinion!' 
     const reviewDescriptionEs = 'Descripción de la opinión'
@@ -31,7 +31,7 @@ const flavorTitle = 'Flavors';
 const ingredientTitle = 'Ingredients';
 const flavors = ['Chocolate', 'Caramel', 'Coffee', 'Mocha', 'Strawberry'];
 const ingredients = ['Strawberries', 'Peaches', 'Grapes', 'Coconut', 'Oreos', 'Etc...'];
-const price = ' Price: $35';
+const price = ' Price: $40';
 const review = 'Leave your review!';
 const reviewDescription = 'Review Description';
 const reviewRating = 'Rating (1-5) 5 is the Best!😃';
