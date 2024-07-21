@@ -10,7 +10,17 @@ import pastel8 from "../images/pasteles/pastel8.jpg";
 import pastel9 from "../images/pasteles/pastel9.jpg";
 import pastel10 from "../images/pasteles/pastel10.jpg";
 import pastel11 from "../images/pasteles/pastel11.jpg";
+import pastel12 from "../images/pasteles/pastel12.png";
+import pastel13 from "../images/pasteles/pastel13.png";
+import pastel14 from "../images/pasteles/pastel14.png";
+import pastel15 from "../images/pasteles/pastel15.png";
+import pastel16 from "../images/pasteles/pastel16.png";
+import pastel17 from "../images/pasteles/pastel17.png";
+
 import { useLanguage } from "../utils/LanguageContext.jsx";
+
+
+
 export default function Pasteles() {
   const [state, dispatch] = useLanguage();
 
@@ -41,6 +51,12 @@ export default function Pasteles() {
     pastel9,
     pastel10,
     pastel11,
+    pastel12,
+    pastel13,
+    pastel14,
+    pastel15,
+    pastel16,
+    pastel17,
   ];
   const pageNumber = 4;
   const reviewEs = "Deja tu opinion!";
